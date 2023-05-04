@@ -8,18 +8,16 @@ import {useNavigate} from 'react-router-dom'
 const ChooseLogin = () => {
     const navigate = useNavigate()
     return (
-        
         <Grid sx={{display:'flex', flexDirection: 'column', alignItems: 'center', height: '80vh', justifyContent: 'center' }}>
-            <h1>Выберите статус</h1>
+            <h1>Choose Your Status:</h1>
 
            <div className='block__btn__login'>
             <Button
-            onClick={()=>navigate('/mentor-login')}>Ментор</Button>
+            onClick={()=>navigate('/mentor-login')}>Mentor</Button>
             <Button
-            onClick={()=>navigate('/user-login')}>Пользователь</Button>
+            onClick={()=>navigate('/user-login')}>User</Button>
             </div>
         </Grid>
-        
     );
 };
 

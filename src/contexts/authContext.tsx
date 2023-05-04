@@ -79,10 +79,10 @@ const AuthContextProvider = ({ children }: { children: ReactNode }) => {
     try {
       const res = await axios.post(`${API_ACCOUNT}register/`, formData);
       console.log(res);
-      navigate("/");
+      navigate("/login");
     } catch (error: any) {
       console.log(error);
-      console.log(Object.values(error.response.data).flat(2));
+      // console.log(Object.values(error.response.data).flat(2));
       setError(Object.values(error.response.data).flat(2));
     }
   };
@@ -174,6 +174,8 @@ const AuthContextProvider = ({ children }: { children: ReactNode }) => {
     setUser,
   };
 
-  return <authContext.Provider value={values}>{children}</authContext.Provider>;
+  return (
+    <authContext.Provider value={ values }>{children}</authContext.Provider>
+  );
 };
 export default AuthContextProvider;

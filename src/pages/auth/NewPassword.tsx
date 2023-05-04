@@ -17,7 +17,7 @@ const NewPassword: React.FC = () => {
 
     const handleSave = () => {
       if(!email.trim() || !password.trim() || !passwordConfirm.trim()){
-        alert('Заполните поля')
+        alert('Fill in the Fields')
       }
       let formData = new FormData()
       formData.append('email', email)
@@ -38,7 +38,7 @@ const NewPassword: React.FC = () => {
                   fullWidth
                   value={email}
                   onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setEmail(e.target.value)}
-                  label="Адрес электронной почты"
+                  label="Email"
                   type="text"
                   id="email"
                   className='mentor-reg__input'
@@ -49,7 +49,7 @@ const NewPassword: React.FC = () => {
                   fullWidth
                   value={password}
                   onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setPassword(e.target.value)}
-                  label="Пароль"
+                  label="password"
                   type="password"
                   id="password"
                   autoComplete="new-password"
@@ -63,7 +63,7 @@ const NewPassword: React.FC = () => {
                   value={passwordConfirm}
                   onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setPasswordConfirm(e.target.value)}
                   name="password"
-                  label="Потвердите пароль"
+                  label="Password confirmation"
                   type="password"
                   id="password"
                   autoComplete="new-password"
@@ -77,9 +77,9 @@ const NewPassword: React.FC = () => {
               onClick={handleSave}
               variant="contained"
               className='mentor-reg__btn'
-              sx={{ mt: 3, mb: 2, background: 'black', borderRadius: '20px'}}
+              sx={{ mt: 3, mb: 2, background: 'black', borderRadius: '0px'}}
             >
-            Отправить
+            Send
             </Button>
            
                 </Container>

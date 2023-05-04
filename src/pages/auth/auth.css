@@ -3,36 +3,34 @@
     flex-direction: column;
     gap: 15px;
     margin-top: 30px;
+    font-family: 'Merriweather', serif;    
 }
 .block__btn__login button{
-    border: 1px solid pink;
-    background-color: pink;
-    color: black;
+    background-color: #fff;
+    border:1px solid black;
+    color: #8E7CC3;
     width: 500px;
-   
-}
-.block__btn__login button:hover{
-color: pink;
-background-color: #fff;
-transition: 0.8s;
-border:1px solid black;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+   border-radius: 0px;
 }
 
 .mentor__reg__checkbox span{
     font-size: 13px;
 }
 .mentor-reg__input fieldset{
-    border-radius: 20px;
-    box-shadow: 0px 1px 5px 2px pink;
+    border-radius: 0px;
+    border: 1px solid #000;
     border: none;
 }
 .input-label fieldset{
-    border-radius: 20px;
-    box-shadow: 0px 1px 5px 2px pink;
-    border: none !important;
+    border-radius: 0px;
+     border: 1px solid #000 !important;
+    
 }
 .mentor-reg__input input{
     padding: 17px;
+     border: 1px solid #000;
 }
 
 .mentor-reg__btn:hover{
@@ -57,17 +55,11 @@ border:1px solid black;
     margin: 0;
 }
 .social-media__btn button{
-    border-radius: 20px;
-    border: none;
-    background-color: pink;
+    border-radius: 0px;
+    border: 1px solid #000;
+    background-color: #000;
     padding: 10px;
     color: #fff;
-  
-}
-.social-media__btn button:hover{
-    color:  black;
-    box-shadow: 0px 1px 5px 2px pink;
-
 }
 .social-media__logo{
     background-position: center;
@@ -97,10 +89,11 @@ border:1px solid black;
 
 .questions-block__label{
     display: flex;
-    background-color: black;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 12px;
-    border-radius: 20px;
+    border: 1px solid #000;
+    border-radius: 0px;
     font-size: 17px;
 }
 .MuiRadio-root{
@@ -122,18 +115,13 @@ border:1px solid black;
     background-color: #fff;
     border: 1.3px solid black;
     margin-top: 25px;
-
-    border-radius: 20px;
+    border-radius: 0%;
     color: black;
-        box-shadow: 0px 1px 5px 2px pink;
-
 }
 .questions-block button:hover{
     color: #fff;
-    /* border: 1px solid black; */
     border: none;
-    background-color:pink;
-
+    background-color:#8E7CC3;
 }
 
 
